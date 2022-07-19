@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+body{
+   background-color: hsl(273, 75%, 66%); 
+}
+.faqsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 950px;
+    height: 100%;
+    margin-top: 90px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.img img{
+    width: 500px;
+    padding: 30px 10px;
+}
+.faq{
+    padding: 40px 40px;
+}
+.question{
+    margin-top: 50px;
+}
+.question h4{
+    color: hsl(240, 6%, 50%);
+    transition: all 0.3s ease;
+    display: inline;
+    border-bottom: 1px solid hsl(237, 12%, 33%);
+    padding-bottom: 10px;
+}
+.question h4:hover{
+    color: hsl(14, 88%, 65%);
+}
+.question p{
+    margin-top: 20px;
+    width: 375px;
+    margin-top: -1000%;
+    transition: all 0.1s ease;
+    color: hsl(240, 6%, 50%);
+    border-bottom: 1px solid hsl(237, 12%, 33%);
+    padding-bottom: 10px;
+}
+.question h4{
+    display: inline;
+}
+input{
+    display: none;
+}
+.checkarrow1{
+    margin-left: 60px;
+    cursor: pointer;
+}
+.checkarrow2{
+    margin-left: 60px;
+    cursor: pointer;
+}
+.checkarrow3{
+    margin-left: 140px;
+    cursor: pointer;
+}
+.checkarrow4{
+    margin-left: 130px;
+    cursor: pointer;
+}
+.checkarrow5{
+    margin-left: 90px;
+    cursor: pointer;
+}
+#check:checked ~ p{
+    margin-top: 10px;
+}
+#check:checked ~ h4{
+    color: hsl(237, 12%, 33%);
+    border: none;
+}
+#check2:checked ~ p{
+    margin-top: 10px;
+    border-bottom: 1px solid hsl(237, 12%, 33%);
+}
+#check2:checked ~ h4{
+    color: hsl(237, 12%, 33%);
+    border: none;
+}
+#check3:checked ~ p{
+    margin-top: 10px;
+}
+#check3:checked ~ h4{
+    color: hsl(237, 12%, 33%);
+    border: none;
+}
+#check4:checked ~ p{
+    margin-top: 10px;
+}
+#check4:checked ~ h4{
+    color: hsl(237, 12%, 33%);
+    border: none;
+}
+#check5:checked ~ p{
+    margin-top: 10px;
+}
+#check5:checked ~ h4{
+    color: hsl(237, 12%, 33%);
+    border: none;
+}
+@media (max-width: 600px){
+    .faqsection{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 450px;
+        margin-left: 30px;
+    }
+    .img{
+        padding: 50px 50px;
+    }
+    .img img{
+        width: 400px;
+    }
+}
